@@ -7,6 +7,7 @@ import {
 } from "react-router";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import Loading from "./pages/Loading";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const App = () => {
       <Route>
         <Route path="/" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/loading" element={<Loading />} />
       </Route>,
     ),
   );
